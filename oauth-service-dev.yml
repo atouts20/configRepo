@@ -1,3 +1,11 @@
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+
+
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -5,15 +13,18 @@ spring:
     username: postgres
     password: P@@SSword2121
 #
-  profiles:
-    active: dev
+#  profiles:
+#    active: default
 
   jpa:
     show-sql: true
     generate-ddl: true
     open-in-view: false
-    hibernate.ddl-auto: create
+    hibernate.ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
 
