@@ -1,9 +1,12 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/succursaledb
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/succursaledb 
     username: postgres
-    password: '#LddndAemadn1879#'
+    password: P@@SSword2121
+
+    
 
   mvc:
     pathmatch:
