@@ -58,9 +58,9 @@ spring:
           ssl:
             enable: true
             trust: "*"
-          timeout: 5000
-          writetimeout: 5000
-          connectiontimeout: 5000
+          timeout: 15000
+          writetimeout: 15000
+          connectiontimeout: 15000
 #
 #
 #  sql:
@@ -75,3 +75,10 @@ spring:
 #  logging:
 #    level:
 #      org.springframework.security: DEBUG
+---
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080
